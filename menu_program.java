@@ -4,7 +4,7 @@ public class menu_program {
 
     public static void main(String[] args) {
         int n1,n2,n3;
-        int op;
+        int op,largest;
         System.out.println("-----------------------------------");
         System.out.println("enter your option");
         Scanner sc = new Scanner(System.in);
@@ -13,7 +13,15 @@ public class menu_program {
 
         switch(op)
         {
-
+            case 1:
+                System.out.println("Enter the first number:");
+                n1 = sc.nextInt();
+                System.out.println("Enter the second number:");
+                n2 = sc.nextInt();
+                System.out.println("Enter the third number:");
+                n3 = sc.nextInt();
+                largest = n3 > (n1 > n2 ? n1 : n2) ? n3 : ((n1 > n2) ? n1 : n2);
+                System.out.println("The largest number is: "+largest);
         }
 
 
