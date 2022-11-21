@@ -63,6 +63,21 @@ public class menu_program {
                     System.out.println(n1 + " is odd");
             }
 
+
+            case 5:
+            {
+                int reverse = 0;
+                System.out.println("Enter the number:");
+                int number = sc.nextInt();
+                while(number != 0)
+                {
+                    int remainder = number % 10;
+                    reverse = reverse * 10 + remainder;
+                    number = number/10;
+                }
+                System.out.println("The reverse of the given number is: " + reverse);
+            }
+
         }
 
 
