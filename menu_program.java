@@ -11,6 +11,11 @@ public class menu_program {
         System.out.println("1.Largest\n2.Smallest\n4.prime or note\n4.Even or note\n5.reverse\n6.Exit");
         op = sc.nextInt();
 
+        switch(op)
+        {
+
+        }
+
 
 
 
