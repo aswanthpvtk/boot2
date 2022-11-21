@@ -53,6 +53,16 @@ public class menu_program {
                     if(flag==0)  { System.out.println(c+" is prime number"); }
                 }
 
+            case 4:
+            {
+                System.out.println("Enter the number:");
+                n1 = sc.nextInt();
+                if(n1 % 2 == 0)
+                    System.out.println(n1 + " is even");
+                else
+                    System.out.println(n1 + " is odd");
+            }
+
         }
 
 
