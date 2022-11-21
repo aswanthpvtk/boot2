@@ -33,6 +33,26 @@ public class menu_program {
                 smallest = n3 < (n1 < n2 ? n1 : n2) ? n3 : ((n1 < n2) ? n1 : n2);
                 System.out.println("The smallest number is: "+smallest);
 
+
+            case 3:
+                int i,m=0,flag=0;
+                System.out.println("Enter the  number:");
+                int c = sc.nextInt();
+
+                m=c/2;
+                if(c==0||c==1){
+                    System.out.println(c+" is not prime number");
+                }else{
+                    for(i=2;i<=m;i++){
+                        if(c%i==0){
+                            System.out.println(c+" is not prime number");
+                            flag=1;
+                            break;
+                        }
+                    }
+                    if(flag==0)  { System.out.println(c+" is prime number"); }
+                }
+
         }
 
 
